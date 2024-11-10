@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: hidden;
+}
+nav {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.sidebar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 10%;
+  height: calc(100% - 50px);
+  background-color: white;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  border-right: 2px solid black;
+}
+
+.left {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  height: 100%;
+  flex: 1;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+button {
+  border-radius: 25px;
+  padding: 5px;
+  transition: 15ms linear;
+}
+.follow:hover {
+  background-color: rgb(94, 153, 202);
+}
+.sb1 {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid black;
+}
+a {
+  text-decoration: none;
+}
+.sb2 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-bottom: 2px solid black;
+}
+.sb3 {
+  flex: 1;
+}
+.details {
+  margin-left: 11%;
+  padding-top: 105px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: calc(100% - 50px);
+}
+.d1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 2px solid black;
+  position: fixed;
+  top: 50px;
+  left: 10%;
+  z-index: 10;
+  background-color: white;
+  width: calc(100% - 10%);
+}
+
+.d1left {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #ddd;
+  border-radius: 100px;
+}
+.d2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 105px;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 15px;
+  height: 150px;
+  width: 500px;
+  margin: 5px;
+}
+.project {
+  width: fit-content;
+  height: 267px;
+  display: grid;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  margin: 5px;
+  margin-top: 15px;
+  padding: 25px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+
+.projects {
+  border: 2px solid black;
+}
+.git {
+  width: fit-content;
+  display: grid;
+  row-gap: 1rem;
+  column-gap: 1rem;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px;
+  margin: 5px;
+  margin-top: 15px;
+  padding: 25px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.github {
+  border: 2px solid black;
+}
+
+.timeline {
+  width: 50%;
+  position: relative;
+  margin: 20px auto;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.content1 {
+  width: 50%;
+  padding: 15px;
+  border: 2px solid black;
+}
+
+.box:nth-child(odd) .content1 {
+  text-align: right;
+  margin-right: auto;
+}
+
+.box:nth-child(even) .content1 {
+  text-align: left;
+  margin-left: auto;
+}
+
+.circle1 {
+  width: 15px;
+  height: 15px;
+  background-color: #f32121;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.workexp{
+  width: 40%;
+  position: relative;
+  margin: 20px auto;
+  border: 5px dotted black;
+  padding: 5px 15px;
+}
+.work{
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  justify-content: center;
+}
+.content2 {
+  width: 50%;
+  padding: 15px;
+  border: 2px solid black;
+}
+
+.work:nth-child(odd) .content2 {
+  text-align: right;
+  margin-right: auto;
+}
+
+.work:nth-child(even) .content2 {
+  text-align: left;
+  margin-left: auto;
+}
+.circle2 {
+  width: 15px;
+  height: 15px;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
